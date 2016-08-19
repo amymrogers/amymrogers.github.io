@@ -1,0 +1,494 @@
+/*!
+ * Start Bootstrap - Landing Page Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:600,400,300|Quicksand|Josefin+Slab|Megrim);
+
+/*
+- Pink: #F7C1BB
+- Taupe: #AA8F66
+- Cerulean: #124E78
+- Cream: #FFEEDB
+- Verdigris: #48A9A6
+- Jet: #363636
+*/
+
+body,
+html {
+    width: 100%;
+    height: 100wh;
+    font-size: 15pt;
+    background-color: #FAF9F9;
+
+}
+
+*{
+   font-family: "Josefin Sans",sans-serif;
+}
+
+
+header {
+    text-align: center;
+    height:160px;
+    font-size: 3em;
+  color: #444;
+    background-color: #BEE3DB;
+
+  background: url("../img/bluebg.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+    padding-top: 40px;
+
+}
+
+
+h1{
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 600;
+}
+
+h2{
+  font-family: "Josefin Slab",sans-serif;
+    font-weight: 700;
+}
+h3{
+   font-family: "Josefin Slab",sans-serif;
+    font-weight: 700;
+    font-variant: small-caps;
+    letter-spacing: .15em;
+}
+h4 {
+    font-family: "Josefin Slab",sans-serif;
+    font-weight: 700;
+}
+h5,h6{
+    font-family: "Josefin Slab",sans-serif;
+    font-weight: 500;
+    font-size: 20pt;
+
+}
+
+p{
+    font-size: 16pt;
+}
+
+.topnav {
+    font-size: 18px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 50px;
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/intro-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    font-size: 5em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    /*text-shadow: 2px 2px 3px rgba(0,0,0,0.6);*/
+}
+
+@media(max-width:767px) {
+    .intro-message {
+        padding-bottom: 15%;
+    }
+
+    .intro-message > h1 {
+        font-size: 3em;
+    }
+
+    ul.intro-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.intro-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+
+    .intro-divider {
+        width: 100%;
+    }
+}
+
+.network-name {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-section-a {
+    padding: 50px 0;
+    background-color: #304860;
+    color: white;
+}
+
+.content-section-b {
+    padding: 50px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+.banner {
+    padding: 100px 0;
+    color: #f8f8f8;
+    background: url(../img/banner-bg.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.banner ul {
+    margin-bottom: 0;
+}
+
+.banner-social-buttons {
+    float: right;
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        float: left;
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+
+
+    ul.banner-social-buttons > li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons > li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+footer {
+    padding: 20px 0;
+    font-size: 0.8em;
+    background-color: #555B6E;
+    color: #faf9f9;
+      background: url("../img/footerbg.png") no-repeat center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+footer a{
+    color: #FFD6BA;
+}
+
+footer a:hover{
+    color: #FFE6CA;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+    color: #666;
+    font-size: 1em;
+}
+.full-width.dropdown {
+    position: static;
+}
+.full-width.dropdown > .dropdown-menu {
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+.full-width.dropdown > .dropdown-menu > li > a {
+   white-space: normal;
+}
+
+.dropdown-menu{
+      font-size: 18px;
+    background-color: rgba(255,255,255,0.6);
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+
+}
+
+.dropdown-menu li {
+    float: right;
+}
+
+.dropdown-menu li a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+
+    max-height: 0;
+    display: block;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.dropdown.open .dropdown-menu {
+    max-height: 300px;
+    opacity: 1;
+}
+
+.triangle-left{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 259.8px 150px 0;
+    border-color: transparent #007387 transparent transparent;
+}
+
+.triangle-left:hover{
+   border-color: transparent #444 transparent transparent;
+}
+
+.triangle-right{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 150px 0 150px 259.8px;
+    border-color: transparent transparent transparent #870000;
+}
+
+.triangle-right:hover{
+    border-color: transparent transparent transparent #444;
+}
+
+
+/* Parallax */
+#story-freext>div:nth-of-type(1) {
+    background: url(../img/nike-bg.jpeg) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    position:absolute;
+    width:100%;
+    top:0;left:0;
+}
+
+#story-freext>div:nth-of-type(2) {
+    background: url(../img/nike.png) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1600px;
+    position:absolute;
+    top:0px;left:100px;
+    width:100%;
+}
+
+#bottle>div:nth-of-type(1){
+    background: url(../img/bottle.jpeg) 50% 0 no-repeat fixed;
+    margin: 0;
+    height: 1200px;
+    position:absolute;
+    top:0;left:0;
+    width:100%;
+}
+.parallax-item{position:absolute;z-index:5;top:40px;left:400px;}
+.content-section h2{
+    font-size: 1.8em;
+    font-variant-caps:all-small-caps;
+    letter-spacing: 4px;
+}
+.content-section h5{
+    font-variant-caps:all-small-caps;
+    letter-spacing: 4px;
+    font-size: 1.4em;
+}
+
+.content-section{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: #faf9f9;
+}
+
+.container {
+    width: 75%;
+}
+
+li:before{
+    content: "\25C8  ";
+    color: #555b6e;
+    margin-right: 4px;
+}
+
+ul {
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+
+li {
+    padding-left: 1em;
+    text-indent: -1.35em;
+}
+
+footer li{
+    padding: 15px;
+    text-indent: 0;
+}
+
+.carousel-fade .carousel-inner .item {
+	  opacity: 0;
+	  -webkit-transition-property: opacity;
+	  -moz-transition-property: opacity;
+	  -o-transition-property: opacity;
+	  transition-property: opacity;
+	}
+
+.carousel-fade .carousel-inner .item img {
+	   max-height: 100%;
+       max-width: 100%;
+	}
+	.carousel-fade .carousel-inner .active {
+	  opacity: 1;
+	}
+	.carousel-fade .carousel-inner .active.left,
+	.carousel-fade .carousel-inner .active.right {
+	  left: 0;
+	  opacity: 0;
+	  z-index: 1;
+	}
+	.carousel-fade .carousel-inner .next.left,
+	.carousel-fade .carousel-inner .prev.right {
+	  opacity: 1;
+	}
+	.carousel-fade .carousel-control {
+	  z-index: 2;
+
+        padding-top: 25%;
+        font-size: 70pt;
+        color: white;
+        opacity: 0.8;
+
+	}
+
+
+
+.img-responsive {
+    padding-bottom: 10px;
+}
+
+.rating {
+    font-size:20px;
+    color: #555b6e;
+    display:inline-block;
+}
+
+.rating span.star1:before {
+    font-family:FontAwesome;
+    content:"\f005\00a0\f006\00a0\f006\00a0\f006\00a0\f006";
+}
+
+.rating span.star2:before {
+    font-family:FontAwesome;
+    content:"\f005\00a0\f005\00a0\f006\00a0\f006\00a0\f006";
+}
+
+.rating span.star3:before {
+    font-family:FontAwesome;
+    content:"\f005\00a0\f005\00a0\f005\00a0\f006\00a0\f006";
+}
+
+.rating span.star4:before {
+    font-family:FontAwesome;
+    content:"\f005\00a0\f005\00a0\f005\00a0\f005\00a0\f006";
+}
+
+.rating span.star5:before {
+    font-family:FontAwesome;
+    content:"\f005\00a0\f005\00a0\f005\00a0\f005\00a0\f005";
+}
+.page-fa i{
+    color: #52586C;
+}
+
+.page-fa i:hover{
+    color: #756b84;
+}
+
+.padded-text {
+    padding: 40px;
+}
+.padded-text p {
+    font-size: 1.2em;
+}
+.padded-text i{
+    padding: 10px;
+}
+
+
+
+.carousel-inner {
+    width: 100%;
+    height: 450px;
+}
+
+
+
+.carousel-caption {
+    width: 100%;
+    left: 0;
+    top: 360px;
+    padding: 7px 30px;
+    background-color: rgba(0,0,0,0.5)
+}
