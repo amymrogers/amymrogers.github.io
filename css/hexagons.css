@@ -10,10 +10,11 @@ body{
     background-color: rgba(0,0,0,0);
 }
 h1 {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 4em;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3.4em;
   font-weight: 300;
   text-align: center;
+  font-variant-caps: small-caps;
   margin: 10px;
 }
 
@@ -90,21 +91,27 @@ section {
 
 .desc {
   color: #444;
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.5em;
-  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
   height: 440px;
-  line-height: 1.5em;
+  line-height: 3em;
   position: absolute;
   text-align: center;
   visibility: visible;
   width: 220px;
+}
+
+.desc h2{
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.04em
 }
 .desc.base {
   background: rgb(190, 227, 219);
 }
 .desc.doing {
   background: rgb(200, 200, 200);
+    cursor: default;
 }
 .desc h2 {
   margin: 165px 10px 0 10px;

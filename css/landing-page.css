@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:600,400,300|Quicksand|Josefin+Slab|Megrim);
+@import url(https://fonts.googleapis.com/css?family=Raleway|Oxygen|Montserrat|Megrim);
 
 /*
 - Pink: #F7C1BB
@@ -24,7 +24,7 @@ html {
 }
 
 *{
-   font-family: "Josefin Sans",sans-serif;
+   font-family: "Raleway",sans-serif;
 }
 
 
@@ -44,30 +44,29 @@ header {
 
     padding-top: 40px;
 
+    font-family: "Oxygen",sans-serif;
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-variant-caps: all-petite-caps;
+
 }
 
 
-h1{
-    font-family: "Josefin Sans",sans-serif;
-    font-weight: 600;
+h1, h2,h4{
+    font-family: "Oxygen",sans-serif;
+    font-weight: 500;
+    letter-spacing: 4px;
 }
 
-h2{
-  font-family: "Josefin Slab",sans-serif;
-    font-weight: 700;
-}
 h3{
-   font-family: "Josefin Slab",sans-serif;
+   font-family: "Oxygen",sans-serif;
     font-weight: 700;
     font-variant: small-caps;
-    letter-spacing: .15em;
+    letter-spacing: .1em;
 }
-h4 {
-    font-family: "Josefin Slab",sans-serif;
-    font-weight: 700;
-}
+
 h5,h6{
-    font-family: "Josefin Slab",sans-serif;
+    font-family: "Oxygen",sans-serif;
     font-weight: 500;
     font-size: 20pt;
 
@@ -75,6 +74,14 @@ h5,h6{
 
 p{
     font-size: 16pt;
+}
+
+a{
+   color: #42485C;
+    text-decoration: underline;
+}
+a:hover{
+    color: #333;
 }
 
 .topnav {
@@ -491,4 +498,14 @@ footer li{
     top: 360px;
     padding: 7px 30px;
     background-color: rgba(0,0,0,0.5)
+}
+
+.btn-primary {
+    background-color: #4C5265;
+}
+
+
+
+.navbar-nav li{
+    list-style: none !important;
 }
