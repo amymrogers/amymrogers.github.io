@@ -497,7 +497,7 @@ footer li{
 }
 
 .padded-text {
-    padding: 40px;
+    padding-left: 40px;
 }
 .padded-text p {
     font-size: 1.2em;
