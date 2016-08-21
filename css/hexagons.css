@@ -103,8 +103,9 @@ section {
 }
 
 .desc h2{
-    font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.04em
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.04em;
+    font-variant-caps: all-small-caps;
 }
 .desc.base {
   background: rgb(190, 227, 219);
