@@ -557,7 +557,7 @@ footer li{
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
-    background-color: rgba(146,199,188,0.7);
+    background-color: rgba(146,199,188,1);
     width: 100%;
 }
 .nav .open>a, .nav .open>a {
