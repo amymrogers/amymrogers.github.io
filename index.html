@@ -2,7 +2,6 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Amy Rogers</title>
 
     <!-- Bootstrap Core CSS -->
@@ -27,8 +26,50 @@
 </head>
 
 <body>
-    <h1 class="index-header">Amy Rogers</h1>
-<section class="large-hexagons">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand"  href="index.html">
+                            <img class='navbar-logo' src='img/logoblue..png'/></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+          <li><a class="nav-t1" href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle nav-t1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Experience<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="wuip.html">Warwick University Internship</a></li>
+            <li><a href="wu.html">Warwick University</a></li>
+          </ul>
+        </li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle nav-t1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="configurator.html">Homepage Configurator</a></li>
+            <li><a href="fyp.html">Final Year Project</a></li>
+              <li class='disabled'><a href="trad.html">Traditional Portfolio</a></li>
+              <li class='disabled'><a href="digital.html">Digital Portfolio</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+    <div class='header frontpage-header'><h1>Amy Rogers </h1><br></div>
+    <!-- Page Content -->
+
+
+    <section class="large-hexagons section-hex">
 <div class="hex_row_odd">
   <div class="center"><a href = "fyp.html">
     <div class="hexagon">
@@ -133,6 +174,34 @@
 </section>
 
 
+    <section class="smallpage-buttons">
+        <div class="container">
+            <div class="row text-center">
+                <a href = "about.html"><div class="col-sm-6 smallbox"><div class="desc-box base">
+                    <h2>About Me</h2>
+                    <p>information</p>
+                    </div></div></a>
+                <a href = "configurator.html"><div class="col-sm-6 smallbox"><div class="desc-box base">
+                    <h2>Homepage Configurator</h2>
+                    <p>project</p>
+                    </div></div></a>
+                <a href = "wu.html"><div class="col-sm-6 smallbox"><div class="desc-box base">
+                    <h2>Warwick University</h2>
+                    <p>experience</p>
+                    </div></div></a>
+                <a href = "fyp.html"><div class="col-sm-6 smallbox"><div class="desc-box base">
+                    <h2>Final Year Project</h2>
+                    <p>project</p>
+                    </div></div></a>
+                <a href = "wuip.html"><div class="col-sm-6 smallbox"><div class="desc-box base">
+                    <h2>Warwick University Internship</h2>
+                    <p>experience</p>
+                    </div></div></a>
+            </div><br><br>
+        </div>
+    </section>
+
+
 
     <footer class="navbar-fixed-bottom">
         <div class="container">
@@ -154,16 +223,18 @@
     <script>
         $(document).ready(function() {
           $('.hexagon').hover(
+            function() {              $(this).find('.desc').removeClass('base');                $(this).find('.desc').css("color","white");
+            }
+            ,
+            function() {                $(this).find('.desc').addClass('base');                 $(this).find('.desc').css("color","#444");
+            });
+            $('.smallbox').hover(
             function() {
-              $(this).find('.desc').removeClass('base');
-                $(this).find('.desc').css("color","white");
-
+                        $(this).find('.desc-box').removeClass('base');                $(this).find('.desc-box').css("color","white");
             }
             ,
             function() {
-
-                $(this).find('.desc').addClass('base');
-                 $(this).find('.desc').css("color","#444");
+                        $(this).find('.desc-box').addClass('base');                $(this).find('.desc-box').css("color","#444");
             });
         });
     </script>

@@ -18,10 +18,11 @@ h1 {
   margin: 10px;
 }
 
-section {
+.section-hex {
   margin: 0 auto;
   text-align: center;
   width: 960px;
+    margin-top: -80px;
 }
 
 .hex_row_even {
@@ -101,15 +102,36 @@ section {
   visibility: visible;
   width: 220px;
 }
+.desc-box{
+    color: #444;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2em;
+  font-weight: 300;
+    padding: 100px 15px;
+    height: 320px;
+  text-align: center;
+    visibility: visible;
+    background: url('../img/hexbg.jpeg');
+}
+.desc-box h2{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.04em;
+    font-variant-caps: all-small-caps;
+}
 
 .desc h2{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.04em;
     font-variant-caps: all-small-caps;
 }
-.desc.base {
+.desc.base, .desc-box.base{
   background: rgb(190, 227, 219);
 }
+
+.base{
+  background: rgb(190, 227, 219);
+}
+
 .desc.doing {
   background: rgb(200, 200, 200);
     cursor: default;
@@ -123,6 +145,7 @@ section {
 footer{
     background-color: #FAF9F9;
     background: transparent;
+    text-align: center;
 }
 
 .index-header {
@@ -141,4 +164,30 @@ footer{
     .large-hexagons{
         display: none;
     }
+    footer{
+        background-color: white;
+    }
+}
+
+.frontpage-header {
+    padding-top: 80px;
+    background-color: rgba(0,0,0,0) !important;
+    background: none !important;
+    font-family: 'Oxygen',sans-serif;
+}
+
+.smallbox {
+    margin-bottom: 10px;
+}
+.smallpage-buttons a{
+    text-decoration: none !important;
+}
+
+.navbar{
+    background-color: rgba(255,255,255,0.95);
+}
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+    background-color: rgba(146,199,188,0);
+    color: #333 !important;
 }

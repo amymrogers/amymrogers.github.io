@@ -502,7 +502,8 @@ footer li{
 }
 
 .padded-text {
-    padding-left: 40px;
+    padding: 20px 0 0 15px;
+    font-size: 0.85em !important;
 }
 .padded-text p {
     font-size: 1.2em;
@@ -567,7 +568,7 @@ footer li{
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
     background-color: rgba(146,199,188,1);
-    width: 100%;
+    color: #333 !important;
 }
 .nav .open>a, .nav .open>a {
     color: white !important;
@@ -599,4 +600,11 @@ h2 i{
 
 .pad-text {
     padding: 0 10px;
+}
+
+.a-circle .fa-circle{
+    color: #92C7BC;
+}
+.a-circle:hover .fa-circle{
+    color: #688F87;
 }
