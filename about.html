@@ -26,7 +26,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -37,7 +37,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand"  href="index.html">
-                            <i class="fa fa-home fa-lg"></i></a>
+                            <img class='navbar-logo' src='img/logowhite..png'/></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -80,7 +80,6 @@
                     <p>I was given my first computer when I was four, and I've been painting for as long as I can remember. I've always been interested in both science and art, and my passion is to do things that envolve both.</p>
                     <p>If you want to know more, feel free to contact me!</p>
 
-                        <button class="btn btn-primary btn-lg" a href="cv2016.pdf">Download my CV</button>
                     <!--div class="page-fa">
                     <a href="https://uk.linkedin.com/pub/amy-rogers/b0/b7a/49a">
                         <i class="fa fa-linkedin-square fa-3x"></i></a>
@@ -102,17 +101,71 @@
         <section>
         <div class="container">
             <div class="row">
-                    <h2 class="text-center">My Resume</h2><hr><br>
-
-                <div class="col-md-5 col-md-offset-1">
-                    <p></p>
+                <div class="col-lg-5 col-lg-offset-1">
+                    <h2><i class="fa fa-mortar-board"></i> Education</h2>
+                </div></div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <h5>Warwick University</h5>
+                    <h6>October 2012-July 2016</h6>
                 </div>
-            </div>
+                <div class="col-lg-6">
+                    <h4>Bachelor's Degree in Computer Science</h4>
+                    <p>The degree material covered a variety of theories and practices. I particularly enjoyed the more practical courses, and my final year project.</p>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <h5>The Hong Kong University of Science and Technology</h5>
+                    <h6>September 2014-June 2015</h6>
+                </div>
+                <div class="col-lg-6">
+                    <h4>Intercalated Year</h4>
+                    <p>As part of my Bachelor's, I spent a year in a forgein university's Computer Science department. Here, I predominantly took courses out of my discipline. I learnt about the fundamentals of electronics, game programming techniques, and a variety of web-based technologies.</p>
+                </div>
+            </div><br>
 
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <h5>Haybridge High School and Sixth Form</h5>
+                    <h6>September 2006-July 2012</h6>
+                </div>
+                <div class="col-lg-6">
+                    <h4>GCSEs and A-Levels</h4>
+                    <p>During high school, I found an interest in maths, science, art, and graphic design. I achieved 8 A* and 4 A grade GCSEs. I also achieved A levels in Maths, Further Maths, Physics, Chemistry, and Art and Design.</p>
+                </div>
+            </div><br><div class="text-center"><hr><br></div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <h2><i class="fa fa-suitcase"></i> Experience</h2>
+                </div></div>
+            <div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <h5>Warwick University</h5>
+                    <h6>June 2015-August 2015</h6>
+                </div>
+                <div class="col-lg-6">
+                    <h4>UX Internship</h4>
+                    <p>I worked for 8 weeks within Warwick IT Services. I worked on a large variety of tasks, from Photoshop to copywriting. The main focus of the internship was an evaluation of the university's academic administration system.</p>
+                </div>
+            </div><div class="row">
+                <div class="col-lg-4 col-lg-offset-1">
+                    <h5>Warwick University</h5>
+                    <h6>September 2015-September 2016</h6>
+                </div>
+                <div class="col-lg-6">
+                    <h4>UX Designer and Developer</h4>
+                    <p>Continuing on from my internship, I worked part-time during my degree. My roles included designing and implementing changes to our customer's websites, and contributing to the redesign of university systems.</p>
+                </div>
+            </div><br>
         </div>
         </section>
     </div>
 
+    <div class="row text-center">
+        <button class="btn btn-primary btn-lg btn-padding"><a href="cv2016.pdf" download><i class="fa fa-file-pdf-o"></i> Download as PDF</a></button>
+        <button class="btn btn-primary btn-lg btn-padding"><a href="cv2016.docx" download><i class="fa fa-file-word-o"></i> Download as Word</a></button>
+    </div><br><br>
 
     <!-- /.content-section-b -->
 
@@ -169,6 +222,13 @@
       $('[id^=carousel-selector-]').removeClass('selected');
       $('[id=carousel-selector-'+id+']').addClass('selected');
     });
+        $(window).scroll(function() {
+          if ($(document).scrollTop() > 150) {
+            $('nav').addClass('shrink');
+          } else {
+            $('nav').removeClass('shrink');
+          }
+        });
 
     </script>
 

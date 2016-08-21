@@ -123,3 +123,21 @@ footer{
     background-color: #FAF9F9;
     background: transparent;
 }
+
+.index-header {
+    margin-top: 50px;
+    margin-bottom: -40px;
+}
+
+.smallpage-buttons{
+    display: none;
+}
+
+@media(max-width:960px) {
+    .smallpage-buttons{
+        display: inherit;
+    }
+    .large-hexagons{
+        display: none;
+    }
+}

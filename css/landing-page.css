@@ -16,11 +16,8 @@
 
 body,
 html {
-    width: 100%;
-    height: 100wh;
     font-size: 15pt;
     background-color: #FAF9F9;
-
 }
 
 *{
@@ -67,10 +64,16 @@ header h2{
 }
 
 
-h1, h2,h4{
+h1, h2{
     font-family: "Oxygen",sans-serif;
     font-weight: 500;
     letter-spacing: 4px;
+}
+
+h4{
+    font-family: "Oxygen",sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
 }
 
 h3{
@@ -83,7 +86,7 @@ h3{
 h5,h6{
     font-family: "Oxygen",sans-serif;
     font-weight: 500;
-    font-size: 20pt;
+    font-size: 0.8em;
 
 }
 
@@ -234,7 +237,7 @@ a:hover{
 }
 
 footer {
-    padding: 20px 0;
+    padding: 0px 0;
     font-size: 0.8em;
     background-color: #555B6E;
     color: #faf9f9;
@@ -530,12 +533,13 @@ footer li{
 
 
 
+
 .navbar-nav li{
     list-style: none !important;
 }
 
 .navbar {
-    background-color: rgba(146,199,188,0.7);
+    background-color: rgba(146,199,188,0.1);
     border: 0;
     padding: 10px;
     padding-top: 5px;
@@ -558,4 +562,28 @@ footer li{
 }
 .nav .open>a, .nav .open>a {
     color: white !important;
+}
+
+.navbar-logo {
+    width: 80px;
+    height: auto;
+}
+
+.shrink{
+    background-color: rgba(146,199,188,1);
+}
+
+h2 i{
+   color: rgb(146,199,188);
+}
+
+.btn-padding {
+    padding: 15px;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
 }
