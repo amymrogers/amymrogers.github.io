@@ -107,8 +107,8 @@ h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.2em;
   font-weight: 300;
-    padding: 100px 15px;
-    height: 320px;
+    height: 200px;
+    padding-top: 11%;
   text-align: center;
     visibility: visible;
     background: url('../img/hexbg.jpeg');
@@ -123,9 +123,6 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.04em;
     font-variant-caps: all-small-caps;
-}
-.desc.base, .desc-box.base{
-  background: rgb(190, 227, 219);
 }
 
 .base{
